@@ -1,53 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Your Name1</title>
-  <style>
-    body, html {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    .section {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2em;
-    }
-
-    .parallax {
-      background-image: url('https://picsum.photos/1920/1080');
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .content {
-      background: #111;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Randy Malvoisin — Identity &amp; Access / Security Engineer</title>
+<meta name="description" content="Randy Malvoisin — IT professional specializing in identity and access management, security operations, and cloud infrastructure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="section parallax">
-    <div>👋 Your Name - Developer</div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__brand">
+      <span class="nav__bracket">[</span>RM<span class="nav__bracket">]</span>
+      <span class="nav__brand-sub">access.log</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" data-nav>Home</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#certs" data-nav>Certs</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#contact" data-nav class="nav__cta">Contact</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <canvas id="nodeCanvas" class="hero__canvas"></canvas>
+  <div class="hero__layer hero__layer--grid" data-speed="0.15" aria-hidden="true"></div>
+  <div class="hero__layer hero__layer--photo" data-speed="0.35" aria-hidden="true"></div>
+  <div class="hero__scrim" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <p class="terminal" id="terminal" aria-hidden="true"></p>
+
+    <h1 class="hero__name">Randy Malvoisin</h1>
+    <p class="hero__title">
+      <span>Identity &amp; Access Management</span>
+      <span class="hero__dot">•</span>
+      <span>Security Operations</span>
+      <span class="hero__dot">•</span>
+      <span>Cloud Infrastructure</span>
+    </p>
+
+    <div class="hero__actions">
+      <a href="#experience" class="btn btn--primary">View Experience</a>
+      <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+    </div>
+
+    <div class="hero__badge">
+      <span class="pulse-dot"></span> SC-300 Certified · 5+ Years in IT Security
+    </div>
   </div>
 
-  <div class="section content">
-    <div>💼 Projects Coming Soon</div>
-  </div>
+  <a href="#about" class="hero__scroll" aria-label="Scroll to About section">
+    <span></span>
+  </a>
+</section>
 
-  <div class="section parallax">
-    <div>📄 Resume Section</div>
-  </div>
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="section__inner about__grid">
+    <div class="reveal">
+      <p class="eyebrow">[ 01 // ABOUT ]</p>
+      <h2 class="section__title">Securing the front door to the enterprise.</h2>
+      <p class="about__text">
+        I'm an IT professional with 5+ years across security operations, network engineering,
+        and identity infrastructure. My focus is Microsoft Entra ID (Azure AD) —
+        deploying phishing-resistant MFA, managing user provisioning and deprovisioning, and
+        enforcing least-privilege access at scale.
+      </p>
+      <p class="about__text">
+        I'm a Microsoft Certified Identity and Access Administrator Associate (SC-300) with a
+        track record of strengthening access controls, reducing audit findings, and automating
+        identity workflows through scripting.
+      </p>
 
-  <div class="section content">
-    <div>📬 Contact Me</div>
-  </div>
+      <div class="stat-row">
+        <div class="stat">
+          <span class="stat__num" data-count="5" data-suffix="+">0</span>
+          <span class="stat__label">Years in IT &amp; Security</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="300" data-suffix="+">0</span>
+          <span class="stat__label">End Users Supported</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="6000" data-suffix="+">0</span>
+          <span class="stat__label">Security Incidents / Year</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="8" data-suffix="">0</span>
+          <span class="stat__label">Active Certifications</span>
+        </div>
+      </div>
+    </div>
 
+    <div class="about__card reveal" data-speed="0.08">
+      <div class="id-badge">
+        <div class="id-badge__photo" aria-hidden="true"></div>
+        <div class="id-badge__strip"></div>
+        <p class="id-badge__label">CLEARANCE CARD</p>
+        <h3 class="id-badge__name">R. Malvoisin</h3>
+        <p class="id-badge__role">Sr. IT Support Specialist</p>
+        <div class="id-badge__row"><span>STATUS</span><span class="id-badge__ok">ACTIVE</span></div>
+        <div class="id-badge__row"><span>ACCESS LEVEL</span><span>ADMIN</span></div>
+        <div class="id-badge__row"><span>MFA</span><span>FIDO2</span></div>
+        <div class="id-badge__barcode" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="skills" id="skills">
+  <div class="skills__bg" data-speed="0.2" aria-hidden="true"></div>
+  <div class="section__inner">
+    <p class="eyebrow reveal">[ 02 // SKILLS ]</p>
+    <h2 class="section__title reveal">Toolset &amp; core competencies.</h2>
+
+    <div class="skill-grid">
+
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <span class="skill-card__id">MOD-01</span>
+          <h3>Identity &amp; Access</h3>
+        </div>
+        <div class="chip-list">
+          <span class="chip">Microsoft Entra ID</span>
+          <span class="chip">Active Directory</span>
+          <span class="chip">SSO</span>
+          <span class="chip">SAML</span>
+          <span class="chip">OAuth 2.0</span>
+          <span class="chip">RBAC / ABAC</span>
+          <span class="chip">Conditional Access</span>
+          <span class="chip">Access Reviews</span>
+          <span class="chip">Provisioning / Deprovisioning</span>
+          <span class="chip">DUO</span>
+          <span class="chip">MFA / FIDO2</span>
+          <span class="chip">PAM</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <span class="skill-card__id">MOD-02</span>
+          <h3>Security &amp; Monitoring</h3>
+        </div>
+        <div class="chip-list">
+          <span class="chip">CrowdStrike</span>
+          <span class="chip">Carbon Black EDR</span>
+          <span class="chip">Microsoft Sentinel</span>
+          <span class="chip">Elastic EDR</span>
+          <span class="chip">Splunk</span>
+          <span class="chip">Fortinet</span>
+          <span class="chip">Cisco Meraki</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <span class="skill-card__id">MOD-03</span>
+          <h3>Cloud Platforms</h3>
+        </div>
+        <div class="chip-list">
+          <span class="chip">Microsoft Azure</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Google Cloud Platform</span>
+          <span class="chip">VMware</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <span class="skill-card__id">MOD-04</span>
+          <h3>Scripting &amp; Automation</h3>
+        </div>
+        <div class="chip-list">
+          <span class="chip">PowerShell</span>
+          <span class="chip">Python</span>
+          <span class="chip">Bash</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <span class="skill-card__id">MOD-05</span>
+          <h3>Governance &amp; Compliance</h3>
+        </div>
+        <div class="chip-list">
+          <span class="chip">HIPAA</span>
+          <span class="chip">ITIL 4</span>
+          <span class="chip">Audit Documentation &amp; Reporting</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="experience" id="experience">
+  <div class="section__inner">
+    <p class="eyebrow reveal">[ 03 // EXPERIENCE ]</p>
+    <h2 class="section__title reveal">Highlights of experience.</h2>
+
+    <div class="timeline">
+
+      <article class="tl-item reveal">
+        <div class="tl-item__marker"><span class="pulse-dot"></span></div>
+        <div class="tl-item__body">
+          <div class="tl-item__meta">
+            <span class="tl-item__date">APR 2025 — PRESENT</span>
+            <span class="tag tag--active">ACTIVE</span>
+          </div>
+          <h3>Senior IT Support Specialist</h3>
+          <p class="tl-item__org">Threshold Rehabilitation Services — Reading, PA</p>
+          <ul>
+            <li>Supervised IT support and identity administration, leading a team of 2 technicians supporting 300+ end users across on-premise and cloud environments.</li>
+            <li>Led migration of on-premise Active Directory to Microsoft Entra ID (Azure AD), centralizing identity management and enabling secure SSO for cloud applications.</li>
+            <li>Deployed FIDO2 phishing-resistant MFA organization-wide, reducing credential-based security incidents.</li>
+            <li>Directed a Windows 11 migration across 300+ devices ahead of Windows 10 end-of-life, maintaining endpoint compliance.</li>
+            <li>Designed and implemented a network topology redesign, improving segmentation and access control enforcement.</li>
+            <li>Developed identity and access documentation protocols for EHR and HIPAA-compliant systems, reducing compliance errors by 40%.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-item__marker"></div>
+        <div class="tl-item__body">
+          <div class="tl-item__meta">
+            <span class="tl-item__date">SEP 2022 — APR 2025</span>
+          </div>
+          <h3>Senior Security Analyst</h3>
+          <p class="tl-item__org">Netrix — Remote</p>
+          <ul>
+            <li>Managed and resolved 6,000+ security incidents annually, including unauthorized access attempts, credential compromise, and account takeovers across 50+ client environments.</li>
+            <li>Administered identity and access controls using Microsoft Sentinel, CrowdStrike, Elastic EDR, and Carbon Black to monitor authentication activity and detect anomalous access.</li>
+            <li>Performed risk assessments on 100+ business applications and systems, identifying and mitigating high-risk findings.</li>
+            <li>Created and optimized 100+ threat detection rules and dashboards, reducing investigation times by 30%.</li>
+            <li>Developed and maintained 30+ security and access-control runbooks, cutting average resolution time by 25%.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-item__marker"></div>
+        <div class="tl-item__body">
+          <div class="tl-item__meta">
+            <span class="tl-item__date">JAN 2021 — JUN 2022</span>
+          </div>
+          <h3>Security &amp; Network Operations Engineer</h3>
+          <p class="tl-item__org">Omega Systems — Reading, PA</p>
+          <ul>
+            <li>Administered firewall policies, NAT rules, ACLs, and traffic filtering to enhance network security.</li>
+            <li>Supported enterprise infrastructure of 150+ switches, routers, and wireless access points across multiple sites.</li>
+            <li>Managed endpoint security protecting 750+ workstations and servers from malware and unauthorized access.</li>
+            <li>Investigated and resolved 100+ security and network incidents monthly, achieving 95% SLA compliance.</li>
+            <li>Managed Active Directory, Azure AD (Entra ID), group policies, and user access permissions.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="education reveal">
+      <div class="education__icon" aria-hidden="true">◈</div>
+      <div>
+        <h3>Bachelor of Science, Information Technology</h3>
+        <p>Western Governors University</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="certs" id="certs">
+  <div class="section__inner">
+    <p class="eyebrow reveal">[ 04 // CERTIFICATIONS ]</p>
+    <h2 class="section__title reveal">Verified credentials.</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card reveal"><span class="cert-card__code">SC-300</span><p>Identity and Access Administrator Associate</p></div>
+      <div class="cert-card reveal"><span class="cert-card__code">AZ-104</span><p>Azure Administrator Associate</p></div>
+      <div class="cert-card reveal"><span class="cert-card__code">AWS-CP</span><p>AWS Certified Cloud Practitioner</p></div>
+      <div class="cert-card reveal"><span class="cert-card__code">CCNA</span><p>Cisco Certified Network Associate</p></div>
+      <div class="cert-card reveal"><span class="cert-card__code">ITIL 4</span><p>Foundation Certificate in IT Service Management</p></div>
+      <div class="cert-card reveal"><span class="cert-card__code">SEC+</span><p>CompTIA Security+</p></div>
+      <div class="cert-card reveal"><span class="cert-card__code">NET+</span><p>CompTIA Network+</p></div>
+      <div class="cert-card reveal"><span class="cert-card__code">A+</span><p>CompTIA A+</p></div>
+      <div class="cert-card reveal"><span class="cert-card__code">PROJ+</span><p>CompTIA Project+</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="projects" id="projects">
+  <div class="projects__bg" data-speed="0.25" aria-hidden="true"></div>
+  <div class="section__inner">
+    <p class="eyebrow reveal">[ 05 // PROJECTS ]</p>
+    <h2 class="section__title reveal">Case study.</h2>
+
+    <div class="project-card reveal">
+      <div class="project-card__head">
+        <div>
+          <span class="project-card__tag">PROJECT 01</span>
+          <h3>On-Prem Active Directory → Azure AD Migration</h3>
+          <p class="project-card__objective">
+            Migrated on-premises Active Directory infrastructure to Azure Active Directory (Azure AD)
+            for improved scalability, accessibility, and security.
+          </p>
+        </div>
+        <div class="project-card__stats">
+          <div><span>167</span>accounts migrated</div>
+          <div><span>100%</span>sync validated</div>
+        </div>
+      </div>
+
+      <div class="phase-list">
+
+        <div class="phase">
+          <button class="phase__head" data-phase>
+            <span class="phase__num">01</span>
+            <span class="phase__title">Planning &amp; Assessment</span>
+            <span class="phase__chevron">▾</span>
+          </button>
+          <div class="phase__body">
+            <ul>
+              <li>Conducted a thorough assessment of the existing on-premises Active Directory structure to identify users, groups, and permissions.</li>
+              <li>Determined requirements for the Azure AD implementation, considering user accounts, devices, applications, and security policies.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="phase">
+          <button class="phase__head" data-phase>
+            <span class="phase__num">02</span>
+            <span class="phase__title">Azure Setup</span>
+            <span class="phase__chevron">▾</span>
+          </button>
+          <div class="phase__body">
+            <ul>
+              <li>Created an Azure account and set up an Azure Virtual Network (VNet) for secure communication with Azure resources.</li>
+              <li>Established a VPN connection between on-premises infrastructure and Azure.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="phase">
+          <button class="phase__head" data-phase>
+            <span class="phase__num">03</span>
+            <span class="phase__title">Azure AD Creation</span>
+            <span class="phase__chevron">▾</span>
+          </button>
+          <div class="phase__body">
+            <ul>
+              <li>Accessed the Azure portal and created a new Azure AD instance.</li>
+              <li>Defined the initial directory structure, including users, groups, and role-based access controls.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="phase">
+          <button class="phase__head" data-phase>
+            <span class="phase__num">04</span>
+            <span class="phase__title">User &amp; Group Migration</span>
+            <span class="phase__chevron">▾</span>
+          </button>
+          <div class="phase__body">
+            <ul>
+              <li>Exported 167 user accounts, group memberships, and permissions from the on-premises Active Directory.</li>
+              <li>Imported the data into Azure AD using Azure AD Connect.</li>
+              <li>Validated that user and group information synchronized correctly.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="phase">
+          <button class="phase__head" data-phase>
+            <span class="phase__num">05</span>
+            <span class="phase__title">Application Integration</span>
+            <span class="phase__chevron">▾</span>
+          </button>
+          <div class="phase__body">
+            <ul>
+              <li>Configured Azure AD Application Proxy to enable secure remote access to on-premises applications.</li>
+              <li>Integrated Azure AD with cloud-based applications and services for single sign-on (SSO).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="phase">
+          <button class="phase__head" data-phase>
+            <span class="phase__num">06</span>
+            <span class="phase__title">Security Enhancements</span>
+            <span class="phase__chevron">▾</span>
+          </button>
+          <div class="phase__body">
+            <ul>
+              <li>Implemented Azure Multi-Factor Authentication (MFA) for an added layer of security.</li>
+              <li>Set up conditional access policies to control access based on user and device conditions.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="project-card__tags">
+        <span class="chip">Azure AD</span>
+        <span class="chip">Azure AD Connect</span>
+        <span class="chip">VPN / VNet</span>
+        <span class="chip">Application Proxy</span>
+        <span class="chip">SSO</span>
+        <span class="chip">MFA</span>
+        <span class="chip">Conditional Access</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact__bg" data-speed="0.15" aria-hidden="true"></div>
+  <div class="section__inner">
+    <p class="eyebrow reveal">[ 06 // CONTACT ]</p>
+    <h2 class="section__title reveal">Establish a connection.</h2>
+    <p class="contact__sub reveal">Open to identity, security, and infrastructure roles. Reach out below.</p>
+
+    <div class="contact-grid reveal">
+      <a class="contact-card" href="mailto:randya.malvoisin@gmail.com" id="emailCard">
+        <span class="contact-card__icon" aria-hidden="true">✉</span>
+        <span class="contact-card__label">Email</span>
+        <span class="contact-card__value">randya.malvoisin@gmail.com</span>
+        <span class="contact-card__action" id="copyEmailBtn" data-copy="randya.malvoisin@gmail.com">Copy address</span>
+      </a>
+
+      <a class="contact-card" href="https://linkedin.com/in/rmalvoisin" target="_blank" rel="noopener noreferrer">
+        <span class="contact-card__icon" aria-hidden="true">in</span>
+        <span class="contact-card__label">LinkedIn</span>
+        <span class="contact-card__value">linkedin.com/in/rmalvoisin</span>
+        <span class="contact-card__action">Open profile ↗</span>
+      </a>
+    </div>
+
+    <p class="copy-toast" id="copyToast" role="status" aria-live="polite">Address copied</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="section__inner footer__inner">
+    <span class="nav__brand nav__brand--footer"><span class="nav__bracket">[</span>RM<span class="nav__bracket">]</span></span>
+    <p>© <span id="year"></span> Randy Malvoisin. Built with intent.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
