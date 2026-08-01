@@ -89,10 +89,6 @@ if (!prefersReducedMotion){
 --------------------------------------------------------- */
 const terminalEl = document.getElementById('terminal');
 const terminalLines = [
-  '$ whoami',
-  '> randy.malvoisin',
-  '$ status --identity',
-  '> ACCESS GRANTED · MFA VERIFIEDd'
 ];
 
 function typeTerminal(){
