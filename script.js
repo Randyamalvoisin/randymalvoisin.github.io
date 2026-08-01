@@ -92,7 +92,7 @@ const terminalLines = [
   '$ whoami',
   '> randy.malvoisin',
   '$ status --identity',
-  '> ACCESS GRANTED · MFA VERIFIED'
+  '> ACCESS GRANTED · MFA VERIFIEDd'
 ];
 
 function typeTerminal(){
