@@ -2,474 +2,345 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Randy Malvoisin</title>
-<meta name="description" content="Randy Malvoisin — IT professional specializing in identity and access management, security operations, and cloud infrastructure.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Randy Malvoisin | Identity &amp; Access Management</title>
+<meta name="description" content="Randy Malvoisin, cloud security professional specializing in identity and access management across Microsoft Entra ID, Okta, AWS, and Google Cloud.">
+<meta name="theme-color" content="#E4E6EA">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="grain" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
 
-<!-- ============ NAV ============ -->
 <header class="nav" id="nav">
-  <div class="nav__inner">
-    <a href="#home" class="nav__brand">
-      <span class="nav__bracket">[</span>RM<span class="nav__bracket">]</span>
-      <span class="nav__brand-sub"></span>
-    </a>
-
-    <nav class="nav__links" id="navLinks">
-      <a href="#home" data-nav>Home</a>
-      <a href="#about" data-nav>About</a>
-      <a href="#skills" data-nav>Skills</a>
-      <a href="#experience" data-nav>Experience</a>
-      <a href="#certs" data-nav>Certs</a>
-      <a href="#projects" data-nav>Projects</a>
-    </nav>
-
-    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+  <a href="#top" class="nav__brand" aria-label="Randy Malvoisin, back to top">RM</a>
+  <nav class="nav__links" id="navLinks" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#gallery">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#certs">Certifications</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact" class="nav__contact">Contact</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span>
+  </button>
 </header>
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="home">
-  <canvas id="nodeCanvas" class="hero__canvas"></canvas>
-  <div class="hero__layer hero__layer--grid" data-speed="0.15" aria-hidden="true"></div>
-  <div class="hero__layer hero__layer--photo" data-speed="0.35" aria-hidden="true"></div>
-  <div class="hero__scrim" aria-hidden="true"></div>
+<main id="main">
 
-  <div class="hero__content">
-    <p class="terminal" id="terminal" aria-hidden="true"></p>
-
-    <h1 class="hero__name">Randy Malvoisin</h1>
-    <p class="hero__title">
-      <span>Identity &amp; Access Management</span>
-      <span class="hero__dot">•</span>
-      <span>Security Operations</span>
-      <span class="hero__dot">•</span>
-      <span>Cloud Infrastructure</span>
-    </p>
-
+<!-- HERO -->
+<section class="hero" id="top">
+  <p class="hero__role">Identity &amp; access management, cloud security</p>
+  <h1 class="hero__name"><span>Randy</span> <span>Malvoisin</span></h1>
+  <div class="hero__foot">
     <div class="hero__actions">
-      <a href="#experience" class="btn btn--primary">View Experience</a>
-      <a href="#contact" class="btn btn--ghost">Get In Touch</a>
-    </div>
-
-    <div class="hero__badge">
-      <span class="pulse-dot"></span> SC-300 Certified · 5+ Years in IT Security
-    </div>
-  </div>
-
-  <a href="#about" class="hero__scroll" aria-label="Scroll to About section">
-    <span></span>
-  </a>
-</section>
-
-<!-- ============ ABOUT ============ -->
-<section class="about" id="about">
-  <div class="section__inner about__grid">
-    <div class="reveal">
-      <p class="eyebrow">[ 01 // ABOUT ]</p>
-      <h2 class="section__title">Securing the front door to the enterprise.</h2>
-      <p class="about__text">
-        I'm an IT professional with 5+ years across security operations, network engineering,
-        and identity infrastructure. My focus is Microsoft Entra ID (Azure AD) —
-        deploying phishing-resistant MFA, managing user provisioning and deprovisioning, and
-        enforcing least-privilege access at scale.
-      </p>
-      <p class="about__text">
-        I'm a Microsoft Certified Identity and Access Administrator Associate (SC-300) with a
-        track record of strengthening access controls, reducing audit findings, and automating
-        identity workflows through scripting.
-      </p>
-
-      <div class="stat-row">
-        <div class="stat">
-          <span class="stat__num" data-count="5" data-suffix="+">0</span>
-          <span class="stat__label">Years in IT &amp; Security</span>
-        </div>
-        <div class="stat">
-          <span class="stat__num" data-count="300" data-suffix="+">0</span>
-          <span class="stat__label">End Users Supported</span>
-        </div>
-        <div class="stat">
-          <span class="stat__num" data-count="6000" data-suffix="+">0</span>
-          <span class="stat__label">Security Incidents / Year</span>
-        </div>
-        <div class="stat">
-          <span class="stat__num" data-count="8" data-suffix="">0</span>
-          <span class="stat__label">Active Certifications</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="about__card reveal" data-speed="0.08">
-      <div class="id-badge">
-        <div class="id-badge__photo" aria-hidden="true"></div>
-        <div class="id-badge__strip"></div>
-        <p class="id-badge__label">CLEARANCE CARD</p>
-        <h3 class="id-badge__name">R. Malvoisin</h3>
-        <p class="id-badge__role">Sr.IT Support Specialist</p>
-        <div class="id-badge__row"><span>STATUS</span><span class="id-badge__ok">ACTIVE</span></div>
-        <div class="id-badge__row"><span>ACCESS LEVEL</span><span>ADMIN</span></div>
-        <div class="id-badge__row"><span>MFA</span><span>PASSED</span></div>
-        <div class="id-badge__barcode" aria-hidden="true"></div>
-      </div>
+      <a href="Randy_Malvoisin_Resume.pdf" class="btn btn--primary" download>Download resume</a>
+      <a href="#gallery" class="btn btn--quiet">View projects</a>
     </div>
   </div>
 </section>
 
-<!-- ============ SKILLS ============ -->
-<section class="skills" id="skills">
-  <div class="skills__bg" data-speed="0.2" aria-hidden="true"></div>
-  <div class="section__inner">
-    <p class="eyebrow reveal">[ 02 // SKILLS ]</p>
-    <h2 class="section__title reveal">Toolset &amp; core competencies.</h2>
+<!-- ABOUT -->
+<section class="about section" id="about">
+  <h2 class="section__title">Securing the front door to the enterprise.</h2>
+  <div class="about__body">
+    <p>I'm a cloud security professional with 5+ years securing identities, endpoints, and networks across Microsoft Azure and hybrid environments, specializing in identity and access management. I led an Active Directory to Microsoft Entra ID migration, deployed FIDO2 phishing-resistant MFA organization-wide, and resolved 6,000+ security incidents a year across 50+ client environments.</p>
+    <p>I build and automate identity controls across Okta, Entra ID, AWS, and Google Cloud, using PowerShell, Microsoft Graph, Okta Workflows, and Power Automate.</p>
 
-    <div class="skill-grid">
-
-      <div class="skill-card reveal">
-        <div class="skill-card__head">
-          <span class="skill-card__id">MOD-01</span>
-          <h3>Identity &amp; Access</h3>
-        </div>
-        <div class="chip-list">
-          <span class="chip">Microsoft Entra ID</span>
-          <span class="chip">Active Directory</span>
-          <span class="chip">SSO</span>
-          <span class="chip">SAML</span>
-          <span class="chip">OAuth 2.0</span>
-          <span class="chip">RBAC / ABAC</span>
-          <span class="chip">Conditional Access</span>
-          <span class="chip">Access Reviews</span>
-          <span class="chip">Provisioning / Deprovisioning</span>
-          <span class="chip">DUO</span>
-          <span class="chip">MFA / FIDO2</span>
-          <span class="chip">PAM</span>
-        </div>
-      </div>
-
-      <div class="skill-card reveal">
-        <div class="skill-card__head">
-          <span class="skill-card__id">MOD-02</span>
-          <h3>Security &amp; Monitoring</h3>
-        </div>
-        <div class="chip-list">
-          <span class="chip">CrowdStrike</span>
-          <span class="chip">Carbon Black EDR</span>
-          <span class="chip">Microsoft Sentinel</span>
-          <span class="chip">Elastic EDR</span>
-          <span class="chip">Splunk</span>
-          <span class="chip">Fortinet</span>
-          <span class="chip">Cisco Meraki</span>
-        </div>
-      </div>
-
-      <div class="skill-card reveal">
-        <div class="skill-card__head">
-          <span class="skill-card__id">MOD-03</span>
-          <h3>Cloud Platforms</h3>
-        </div>
-        <div class="chip-list">
-          <span class="chip">Microsoft Azure</span>
-          <span class="chip">AWS</span>
-          <span class="chip">Google Cloud Platform</span>
-          <span class="chip">VMware</span>
-        </div>
-      </div>
-
-      <div class="skill-card reveal">
-        <div class="skill-card__head">
-          <span class="skill-card__id">MOD-04</span>
-          <h3>Scripting &amp; Automation</h3>
-        </div>
-        <div class="chip-list">
-          <span class="chip">PowerShell</span>
-          <span class="chip">Python</span>
-          <span class="chip">Bash</span>
-          <span class="chip">HTML5</span>
-          <span class="chip">CSS</span>
-          <span class="chip">JavaScript</span>
-        </div>
-      </div>
-
-      <div class="skill-card reveal">
-        <div class="skill-card__head">
-          <span class="skill-card__id">MOD-05</span>
-          <h3>Governance &amp; Compliance</h3>
-        </div>
-        <div class="chip-list">
-          <span class="chip">HIPAA</span>
-          <span class="chip">ITIL 4</span>
-          <span class="chip">Audit Documentation &amp; Reporting</span>
-        </div>
-      </div>
-
-    </div>
   </div>
+  <dl class="facts">
+      <div class="fact fact--ink"><dt>Years in IT and security</dt><dd>5+</dd></div>
+      <div class="fact fact--blue"><dt>Users supported</dt><dd>15,000+</dd></div>
+      <div class="fact fact--orange"><dt>Security incidents a year</dt><dd>6,000+</dd></div>
+      <div class="fact fact--lilac"><dt>Active certifications</dt><dd>10</dd></div>
+    </dl>
 </section>
 
-<!-- ============ EXPERIENCE ============ -->
-<section class="experience" id="experience">
-  <div class="section__inner">
-    <p class="eyebrow reveal">[ 03 // EXPERIENCE ]</p>
-    <h2 class="section__title reveal">Highlights of experience.</h2>
-
-    <div class="timeline">
-
-      <article class="tl-item reveal">
-        <div class="tl-item__marker"><span class="pulse-dot"></span></div>
-        <div class="tl-item__body">
-          <div class="tl-item__meta">
-            <span class="tl-item__date">APR 2025 — PRESENT</span>
-            <span class="tag tag--active">ACTIVE</span>
-          </div>
-          <h3>Senior IT Support Specialist</h3>
-          <p class="tl-item__org">Threshold Rehabilitation Services — Reading, PA</p>
-          <ul>
-            <li>Supervised IT support and identity administration, leading a team of 2 technicians supporting 300+ end users across on-premise and cloud environments.</li>
-            <li>Led migration of on-premise Active Directory to Microsoft Entra ID (Azure AD), centralizing identity management and enabling secure SSO for cloud applications.</li>
-            <li>Deployed FIDO2 phishing-resistant MFA organization-wide, reducing credential-based security incidents.</li>
-            <li>Directed a Windows 11 migration across 300+ devices ahead of Windows 10 end-of-life, maintaining endpoint compliance.</li>
-            <li>Designed and implemented a network topology redesign, improving segmentation and access control enforcement.</li>
-            <li>Developed identity and access documentation protocols for EHR and HIPAA-compliant systems, reducing compliance errors by 40%.</li>
-          </ul>
+<!-- GALLERY -->
+<section class="gallery" id="gallery" aria-labelledby="galleryTitle">
+  <div class="gallery__intro">
+    <h2 id="galleryTitle">Projects</h2>
+    <p>Two case studies from real work and eight labs built in my own Entra ID, Okta, AWS, and Google Cloud environments. The Entra ID and Okta labs were broken on purpose and documented with the root cause and fix.</p>
+  </div>
+  <div class="gallery__stage">
+    <div class="gallery__floor" aria-hidden="true"></div>
+    <div class="gallery__world" id="galleryWorld">
+      <p class="gallery__sign gallery__sign--orange" aria-hidden="true">In production</p>
+      <article class="exhibit exhibit--orange" id="ex-migration">
+        <div class="exhibit__art exhibit__art--orange" aria-hidden="true"><svg viewBox="0 0 200 120" fill="none"><rect x="30" y="34" width="54" height="52" rx="6"/><path d="M40 50h34M40 60h34M40 70h22"/><path d="M96 60h40" class="a"/><path d="M128 52l8 8-8 8" class="a"/><circle cx="162" cy="60" r="22"/><path d="M152 60h20M162 50v20"/></svg></div>
+        <div class="exhibit__placard">
+          <p class="exhibit__kicker">Case study, in production</p>
+          <h3 class="exhibit__title">Active Directory to Microsoft Entra ID</h3>
+          <p class="exhibit__summary">300+ users moved to Entra ID with SSO, FIDO2, and Conditional Access.</p>
+          <button class="exhibit__open" type="button" aria-haspopup="dialog">View details</button>
         </div>
+        <template class="exhibit__detail">
+          <p class="detail__lede">Led the move from on-premise Active Directory to Microsoft Entra ID at Threshold Rehabilitation Services, centralizing identity for 300+ users and putting cloud apps behind single sign-on, phishing-resistant MFA, and Conditional Access.</p>
+          <dl class="detail__stats"><div><dt>Users migrated</dt><dd>300+</dd></div><div><dt>Apps on SSO</dt><dd>20+</dd></div><div><dt>Conditional Access policies</dt><dd>10</dd></div></dl>
+          <ol class="detail__phases"><li><h4>Assessment and planning</h4><ul><li>Assessed the existing Active Directory structure to inventory users, groups, and permissions.</li><li>Defined Entra ID requirements for user accounts, devices, applications, and security policies.</li></ul></li><li><h4>Hybrid connectivity</h4><ul><li>Set up an Azure Virtual Network and a VPN connection between on-premise infrastructure and Azure.</li></ul></li><li><h4>Identity synchronization</h4><ul><li>Synchronized 300+ user accounts, groups, and memberships to Entra ID with Azure AD Connect (now Microsoft Entra Connect).</li><li>Validated that user and group data synchronized correctly before cutover.</li></ul></li><li><h4>SSO and application integration</h4><ul><li>Registered and configured 20+ enterprise applications in Entra ID, integrating them through OAuth 2.0 and OpenID Connect for centralized sign-on.</li><li>Configured Application Proxy for secure remote access to on-premise applications.</li></ul></li><li><h4>Access controls</h4><ul><li>Deployed FIDO2 phishing-resistant MFA organization-wide, reducing credential-based security incidents.</li><li>Designed and deployed 10 Conditional Access policies enforcing MFA and access requirements across users, cloud apps, and admin roles.</li></ul></li></ol>
+          <h4>Tools</h4>
+          <ul class="tags"><li>Microsoft Entra ID</li><li>Entra Connect</li><li>SSO</li><li>OAuth 2.0 / OIDC</li><li>FIDO2</li><li>Conditional Access</li><li>Application Proxy</li></ul>
+        </template>
       </article>
+      <p class="gallery__sign gallery__sign--blue" aria-hidden="true">Microsoft Entra ID</p>
+      <article class="exhibit exhibit--blue" id="ex-saml">
+        <div class="exhibit__art exhibit__art--blue" aria-hidden="true"><svg viewBox="0 0 200 120" fill="none"><circle cx="62" cy="60" r="26"/><circle cx="138" cy="60" r="26"/><path d="M90 52h22" class="a"/><path d="M106 46l6 6-6 6" class="a"/><path d="M110 68H88"/><path d="M94 62l-6 6 6 6"/></svg></div>
+        <div class="exhibit__placard">
+          <p class="exhibit__kicker">Entra ID lab</p>
+          <h3 class="exhibit__title">Salesforce SAML federation</h3>
+          <p class="exhibit__summary">IdP- and SP-initiated sign-in, with every federation failure traced and fixed.</p>
+          <button class="exhibit__open" type="button" aria-haspopup="dialog">View details</button>
+        </div>
+        <template class="exhibit__detail">
+          <p class="detail__lede">Federated Salesforce with Entra ID over SAML, working both IdP-initiated (My Apps) and SP-initiated sign-in. Resolved Entity ID, sign-on URL, and NameID-to-Federation ID mapping failures with the Salesforce SAML Assertion Validator.</p>
+          <h4>Tools</h4>
+          <ul class="tags"><li>SAML 2.0</li><li>Enterprise Apps</li><li>Salesforce</li></ul>
+        </template>
+      </article>
+      <article class="exhibit exhibit--blue" id="ex-managed">
+        <div class="exhibit__art exhibit__art--blue" aria-hidden="true"><svg viewBox="0 0 200 120" fill="none"><rect x="70" y="52" width="60" height="44" rx="8"/><path d="M82 52V40a18 18 0 0 1 36 0v12"/><circle cx="100" cy="72" r="5" class="a"/><path d="M100 77v8" class="a"/></svg></div>
+        <div class="exhibit__placard">
+          <p class="exhibit__kicker">Entra ID lab</p>
+          <h3 class="exhibit__title">Secretless automation</h3>
+          <p class="exhibit__summary">A runbook that reads storage with managed identities and no secrets at all.</p>
+          <button class="exhibit__open" type="button" aria-haspopup="dialog">View details</button>
+        </div>
+        <template class="exhibit__detail">
+          <p class="detail__lede">Built an Azure Automation runbook that reads Blob Storage with a system-assigned managed identity, then migrated it to a user-assigned identity. Diagnosed Azure RBAC 403 vs. 404 errors and revocation propagation delays.</p>
+          <h4>Tools</h4>
+          <ul class="tags"><li>Managed Identities</li><li>Azure RBAC</li><li>Azure Automation</li></ul>
+        </template>
+      </article>
+      <article class="exhibit exhibit--blue" id="ex-tenant">
+        <div class="exhibit__art exhibit__art--blue" aria-hidden="true"><svg viewBox="0 0 200 120" fill="none"><rect x="40" y="18" width="120" height="84" rx="10"/><rect x="62" y="34" width="76" height="52" rx="8"/><rect x="84" y="48" width="32" height="24" rx="5" class="a"/></svg></div>
+        <div class="exhibit__placard">
+          <p class="exhibit__kicker">Entra ID lab</p>
+          <h3 class="exhibit__title">Secure tenant foundation</h3>
+          <p class="exhibit__summary">Break-glass accounts and least-privilege admins instead of standing Global Admin.</p>
+          <button class="exhibit__open" type="button" aria-haspopup="dialog">View details</button>
+        </div>
+        <template class="exhibit__detail">
+          <p class="detail__lede">Verified a custom domain, created cloud-only break-glass accounts, and replaced standing Global Admin with least-privilege admin roles. Documented a tenant baseline and wrote Graph PowerShell provisioning scripts that abort if connected to the wrong tenant.</p>
+          <h4>Tools</h4>
+          <ul class="tags"><li>Least Privilege</li><li>Graph PowerShell</li><li>Hyper-V</li></ul>
+        </template>
+      </article>
+      <p class="gallery__sign gallery__sign--ink" aria-hidden="true">Okta</p>
+      <article class="exhibit exhibit--ink" id="ex-fido">
+        <div class="exhibit__art exhibit__art--ink" aria-hidden="true"><svg viewBox="0 0 200 120" fill="none"><rect x="56" y="40" width="96" height="40" rx="20"/><circle cx="76" cy="60" r="10" class="a"/><path d="M152 60h22M166 60v10M174 60v6"/></svg></div>
+        <div class="exhibit__placard">
+          <p class="exhibit__kicker">Okta lab</p>
+          <h3 class="exhibit__title">Phishing-resistant MFA</h3>
+          <p class="exhibit__summary">Hardware-bound FIDO2 enrollment and step-up MFA with no bypass left open.</p>
+          <button class="exhibit__open" type="button" aria-haspopup="dialog">View details</button>
+        </div>
+        <template class="exhibit__detail">
+          <p class="detail__lede">Restricted FIDO2/WebAuthn enrollment to approved hardware by AAGUID and required phishing-resistant step-up MFA for a sensitive app, backed by a catch-all deny rule. Closed a Global Session bypass gap with attribute-based groups, a safe fallback rule, and a break-glass account.</p>
+          <h4>Tools</h4>
+          <ul class="tags"><li>FIDO2 / WebAuthn</li><li>YubiKey</li><li>Authentication Policies</li></ul>
+        </template>
+      </article>
+      <article class="exhibit exhibit--ink" id="ex-lifecycle">
+        <div class="exhibit__art exhibit__art--ink" aria-hidden="true"><svg viewBox="0 0 200 120" fill="none"><path d="M100 26a34 34 0 1 1-30 18"/><path d="M62 32l8 12 12-8" /><circle cx="100" cy="60" r="8" class="a"/></svg></div>
+        <div class="exhibit__placard">
+          <p class="exhibit__kicker">Okta lab</p>
+          <h3 class="exhibit__title">Identity lifecycle automation</h3>
+          <p class="exhibit__summary">Birthright access, API scripts, and event-driven onboarding.</p>
+          <button class="exhibit__open" type="button" aria-haspopup="dialog">View details</button>
+        </div>
+        <template class="exhibit__detail">
+          <p class="detail__lede">Automated birthright access with custom profile attributes, Okta Expression Language, and Group Rules. Wrote PowerShell against the Okta Management API for user creation, deactivation, and a 90-day inactive-account report, and built event-driven onboarding in Okta Workflows.</p>
+          <h4>Tools</h4>
+          <ul class="tags"><li>Okta Management API</li><li>PowerShell</li><li>Okta Workflows</li><li>Group Rules</li></ul>
+        </template>
+      </article>
+      <article class="exhibit exhibit--ink" id="ex-rca">
+        <div class="exhibit__art exhibit__art--ink" aria-hidden="true"><svg viewBox="0 0 200 120" fill="none"><path d="M40 28h28v16h28v16h28v16h28v16" /><circle cx="160" cy="92" r="6" class="a"/></svg></div>
+        <div class="exhibit__placard">
+          <p class="exhibit__kicker">Okta lab</p>
+          <h3 class="exhibit__title">Lockout and root cause analysis</h3>
+          <p class="exhibit__summary">An org-wide lockout, recovered and traced to the missing safeguard.</p>
+          <button class="exhibit__open" type="button" aria-haspopup="dialog">View details</button>
+        </div>
+        <template class="exhibit__detail">
+          <p class="detail__lede">Diagnosed a self-inflicted, org-wide authentication lockout caused by a silent bot-detection failure, then recovered access. Wrote a 5-Whys root cause analysis tracing it past the technical trigger to the missing safeguards: no break-glass account and no post-change verification.</p>
+          <h4>Tools</h4>
+          <ul class="tags"><li>System Log</li><li>Root Cause Analysis</li><li>Incident Response</li></ul>
+        </template>
+      </article>
+      <p class="gallery__sign gallery__sign--lilac" aria-hidden="true">AWS and Google Cloud</p>
+      <article class="exhibit exhibit--lilac" id="ex-aws">
+        <div class="exhibit__art exhibit__art--lilac" aria-hidden="true"><svg viewBox="0 0 200 120" fill="none"><rect x="36" y="30" width="22" height="22" rx="4"/><rect x="36" y="68" width="22" height="22" rx="4"/><rect x="142" y="30" width="22" height="22" rx="4"/><rect x="142" y="68" width="22" height="22" rx="4"/><circle cx="100" cy="60" r="14" class="a"/><path d="M58 41l30 13M58 79l30-13M142 41l-30 13M142 79l-30-13"/></svg></div>
+        <div class="exhibit__placard">
+          <p class="exhibit__kicker">AWS lab</p>
+          <h3 class="exhibit__title">IAM Identity Center federation</h3>
+          <p class="exhibit__summary">SSO into AWS from Okta and Entra ID, mapped to least-privilege permission sets.</p>
+          <button class="exhibit__open" type="button" aria-haspopup="dialog">View details</button>
+        </div>
+        <template class="exhibit__detail">
+          <p class="detail__lede">Federated AWS IAM Identity Center with Okta and Entra ID for SSO into AWS accounts, mapping IdP groups to least-privilege permission sets. Enforced least privilege with IAM roles, permission boundaries, and deny guardrails, and audited access with IAM Access Analyzer and CloudTrail.</p>
+          <h4>Tools</h4>
+          <ul class="tags"><li>IAM Identity Center</li><li>Permission Boundaries</li><li>CloudTrail</li></ul>
+        </template>
+      </article>
+      <article class="exhibit exhibit--lilac" id="ex-gcp">
+        <div class="exhibit__art exhibit__art--lilac" aria-hidden="true"><svg viewBox="0 0 200 120" fill="none"><circle cx="46" cy="36" r="8"/><circle cx="46" cy="84" r="8"/><circle cx="46" cy="60" r="8"/><path d="M54 36l60 20M54 60h60M54 84l60-20"/><path d="M122 70a16 16 0 0 1 2-32 22 22 0 0 1 42 6 13 13 0 0 1-2 26z" class="a"/></svg></div>
+        <div class="exhibit__placard">
+          <p class="exhibit__kicker">Google Cloud lab</p>
+          <h3 class="exhibit__title">Workforce Identity Federation</h3>
+          <p class="exhibit__summary">Corporate sign-in to Google Cloud with no separate accounts and no key files.</p>
+          <button class="exhibit__open" type="button" aria-haspopup="dialog">View details</button>
+        </div>
+        <template class="exhibit__detail">
+          <p class="detail__lede">Configured Workforce Identity Federation from Entra ID so users sign in to Google Cloud with their corporate identity, with no separate Google accounts. Replaced service account keys with short-lived impersonation, applied project-level custom roles, and reviewed access with Policy Analyzer and Cloud Audit Logs.</p>
+          <h4>Tools</h4>
+          <ul class="tags"><li>Cloud IAM</li><li>Service Account Impersonation</li><li>Policy Analyzer</li></ul>
+        </template>
+      </article>
+      <p class="gallery__sign gallery__sign--orange" aria-hidden="true">Automation</p>
+      <article class="exhibit exhibit--orange" id="ex-automation">
+        <div class="exhibit__art exhibit__art--orange" aria-hidden="true"><svg viewBox="0 0 200 120" fill="none"><path d="M44 34h70M44 60h70M44 86h70"/><path d="M130 34l6 6 12-12M130 60l6 6 12-12M130 86l6 6 12-12" class="a"/></svg></div>
+        <div class="exhibit__placard">
+          <p class="exhibit__kicker">Case study, workflow automation</p>
+          <h3 class="exhibit__title">Event registration with Power Automate Desktop</h3>
+          <p class="exhibit__summary">An attendee spreadsheet turned into completed registrations, one checkout per row.</p>
+          <button class="exhibit__open" type="button" aria-haspopup="dialog">View details</button>
+        </div>
+        <template class="exhibit__detail">
+          <p class="detail__lede">Automated bulk attendee registration for a nonprofit fundraising luncheon. The flow reads an Excel attendee list and completes one Givebutter checkout per row, replacing manual data entry for every guest.</p>
+          <dl class="detail__stats"><div><dt>Steps per row</dt><dd>14</dd></div><div><dt>Build issues solved</dt><dd>8</dd></div></dl>
+          <ol class="detail__phases"><li><h4>The problem</h4><ul><li>Every attendee had to be registered by hand through the event’s online checkout, re-typing names, emails, and meal choices from a spreadsheet.</li><li>The flow loops through the sheet and completes each checkout: ticket quantity, attendee details, consent, meal selection, a complimentary-ticket code, and buyer details.</li></ul></li><li><h4>Why UI automation instead of browser automation</h4><ul><li>The Power Automate browser extension could not take control of Edge, so browser actions opened the page and then stalled.</li><li>The checkout opens in a pop-up that blocked web-page actions entirely.</li><li>I switched to UI automation (“in window” actions) against an Edge window the flow launches itself. The trade-off: the window must stay in front during a run, and every selector has to be tuned and tested.</li></ul></li><li><h4>Flow design</h4><ul><li>Reads the sheet once with the header row as column names, so data is found by header instead of position.</li><li>A helper column converts short meal names into the exact dropdown text the site expects.</li><li>Clicks use simulated actions; text fields use Populate text field.</li><li>Each loop ends by reloading the page from the address bar, so every row starts on a clean page even if a step went wrong.</li></ul></li><li><h4>Troubleshooting</h4><div class="table-wrap"><table class="trouble"><thead><tr><th scope="col">Symptom</th><th scope="col">Cause</th><th scope="col">Fix</th></tr></thead><tbody><tr><td>Failed to write in text box (“failed to get window”)</td><td>Window title included the open-tab count, so the exact title match broke</td><td>Flow opens its own single-tab window; other event tabs closed before a run</td></tr><tr><td>Loop values show Column1, Column2…</td><td>Header row was read as data</td><td>Enabled “First line of range contains column names” when reading Excel</td></tr><tr><td>Edge opens the page but the flow stalls</td><td>Browser extension could not take control of the new window</td><td>Replaced with Run application launching Edge in a new window</td></tr><tr><td>Click runs but nothing happens</td><td>Wrong Edge window matched, or the button was off-screen</td><td>One Edge window only; simulated clicks</td></tr><tr><td>Click fails on Continue (“failed to get UI element”)</td><td>The form container’s class changes between checkout screens</td><td>Removed the Class attribute from that container’s selector</td></tr><tr><td>Text typed into nothing</td><td>Captured the placeholder label instead of the input box</td><td>Recaptured the Edit element</td></tr><tr><td>Meal dropdown not selected</td><td>Sheet held a short meal name; the site needs the full option text</td><td>Helper column converts to full text; select option by name</td></tr><tr><td>Second row: last name lands in the first-name box</td><td>Browser autofill pop-up covered the field</td><td>Turned off and cleared autofill; Tab keystroke after first name</td></tr></tbody></table></div></li><li><h4>Safeguards and next steps</h4><ul><li>Every run creates live registrations, so each change is validated on two or three rows before the full list, and test registrations are deleted afterward.</li><li>Documented prerequisites, selector-capture steps, and fixes as a reusable runbook.</li><li>Next: write a “Done” status back to Excel after each row, so a stopped run shows exactly where to restart.</li></ul></li></ol>
+          <h4>Tools</h4>
+          <ul class="tags"><li>Power Automate Desktop</li><li>UI Automation</li><li>Excel</li><li>Selector Tuning</li><li>Runbook Documentation</li></ul>
+        </template>
+      </article>
+    </div>
+    <p class="gallery__counter" aria-hidden="true"><span id="galleryIndex">1</span> of <span id="galleryTotal">10</span><span class="gallery__now" id="galleryNow"></span></p>
+  </div>
+</section>
 
-      <article class="tl-item reveal">
-        <div class="tl-item__marker"></div>
-        <div class="tl-item__body">
-          <div class="tl-item__meta">
-            <span class="tl-item__date">SEP 2022 — APR 2025</span>
-          </div>
+<!-- EXPERIENCE -->
+<section class="experience section" id="experience">
+  <h2 class="section__title">Experience</h2>
+  <ol class="jobs">
+      <li class="job job--orange">
+        <div class="job__side">
+          <p class="job__when">Apr 2025 – present<span class="job__now">Current</span></p>
+          <p class="job__company">Threshold Rehabilitation Services</p>
+          <p class="job__place">Reading, PA</p>
+        </div>
+        <div class="job__body">
+          <h3>Senior IT Support Specialist, Identity &amp; Access Management</h3>
+          <ul><li>Led the migration of on-premise Active Directory to Microsoft Entra ID, centralizing identity for 300+ users and enabling single sign-on (SSO) to cloud applications.</li><li>Deployed FIDO2 phishing-resistant MFA organization-wide, reducing credential-based security incidents and hardening the organization’s authentication posture.</li><li>Registered and configured 20+ enterprise applications in Microsoft Entra ID, integrating them through OAuth 2.0 and OpenID Connect (OIDC) for secure, centralized sign-on.</li><li>Designed and deployed 10 Conditional Access policies in Entra ID, enforcing MFA and access requirements across users, cloud applications, and admin roles.</li><li>Lead identity administration and IT operations with a team of 2 technicians supporting 300+ users across cloud and on-premise environments.</li><li>Built 10+ Power Automate flows that automated manual administrative and data-entry workflows, making processing 20% faster; documented each build with a troubleshooting runbook for reuse.</li></ul>
+        </div>
+      </li>
+      <li class="job job--blue">
+        <div class="job__side">
+          <p class="job__when">Sep 2022 – Apr 2025</p>
+          <p class="job__company">Netrix</p>
+          <p class="job__place">Remote</p>
+        </div>
+        <div class="job__body">
           <h3>Senior Security Analyst</h3>
-          <p class="tl-item__org">Netrix — Remote</p>
-          <ul>
-            <li>Managed and resolved 6,000+ security incidents annually, including unauthorized access attempts, credential compromise, and account takeovers across 50+ client environments.</li>
-            <li>Administered identity and access controls using Microsoft Sentinel, CrowdStrike, Elastic EDR, and Carbon Black to monitor authentication activity and detect anomalous access.</li>
-            <li>Performed risk assessments on 100+ business applications and systems, identifying and mitigating high-risk findings.</li>
-            <li>Created and optimized 100+ threat detection rules and dashboards, reducing investigation times by 30%.</li>
-            <li>Developed and maintained 30+ security and access-control runbooks, cutting average resolution time by 25%.</li>
-          </ul>
+          <ul><li>Investigated and resolved 6,000+ security incidents annually, including unauthorized access, credential compromise, and account takeover, across 50+ client environments.</li><li>Monitored authentication activity and detected anomalous access behavior using Microsoft Sentinel, CrowdStrike, Elastic EDR, and Carbon Black.</li><li>Used Microsoft Defender for Cloud to assess security posture and remediate cloud misconfigurations across client Azure environments, and built Conditional Access policies to harden client sign-in controls.</li><li>Engineered 100+ threat detection rules and dashboards, improving visibility into identity and security events and reducing investigation time by 30%.</li><li>Built and maintained 30+ security and access-control runbooks that automated account lockdown and access revocation, cutting average resolution time by 25%.</li><li>Performed risk assessments on 100+ business applications and systems, identifying and remediating high-risk access and configuration findings.</li></ul>
         </div>
-      </article>
-
-      <article class="tl-item reveal">
-        <div class="tl-item__marker"></div>
-        <div class="tl-item__body">
-          <div class="tl-item__meta">
-            <span class="tl-item__date">JAN 2021 — JUN 2022</span>
-          </div>
+      </li>
+      <li class="job job--lilac">
+        <div class="job__side">
+          <p class="job__when">Jan 2021 – Jun 2022</p>
+          <p class="job__company">Omega Systems</p>
+          <p class="job__place">Reading, PA</p>
+        </div>
+        <div class="job__body">
           <h3>Security &amp; Network Operations Engineer</h3>
-          <p class="tl-item__org">Omega Systems — Reading, PA</p>
-          <ul>
-            <li>Administered firewall policies, NAT rules, ACLs, and traffic filtering to enhance network security.</li>
-            <li>Supported enterprise infrastructure of 150+ switches, routers, and wireless access points across multiple sites.</li>
-            <li>Managed endpoint security protecting 750+ workstations and servers from malware and unauthorized access.</li>
-            <li>Investigated and resolved 100+ security and network incidents monthly, achieving 95% SLA compliance.</li>
-            <li>Managed Active Directory, Azure AD (Entra ID), group policies, and user access permissions.</li>
-          </ul>
+          <ul><li>Administered Active Directory and Azure AD (Entra ID) identities, group policies, and user access permissions for managed client environments.</li><li>Investigated and responded to security incidents, alerts, and suspicious network activity using SIEM platforms, resolving 100+ incidents monthly at 95% SLA compliance.</li><li>Managed endpoint security protecting 750+ workstations and servers from malware and unauthorized access.</li><li>Administered firewall policies, NAT rules, ACLs, and traffic filtering to enforce network security controls across multiple client sites.</li></ul>
         </div>
-      </article>
+      </li>
+  </ol>
+  <p class="education"><strong>Bachelor of Science, Information Technology</strong>, Western Governors University</p>
+</section>
 
-    </div>
-
-    <div class="education reveal">
-      <div class="education__icon" aria-hidden="true">◈</div>
-      <div>
-        <h3>Bachelor of Science, Information Technology</h3>
-        <p>Western Governors University</p>
+<!-- CERTIFICATIONS -->
+<section class="certs section" id="certs">
+  <h2 class="section__title">Certifications</h2>
+  <div class="certs__tiers">
+      <div class="certs__tier certs__tier--blue">
+        <h3>Identity and access</h3>
+        <ul><li><span class="certs__code">SC-300</span><span>Microsoft Certified: Identity and Access Administrator Associate</span></li><li><span class="certs__code">Okta</span><span>Okta Certified Administrator</span></li><li><span class="certs__code">SailPoint</span><span>SailPoint Certified IdentityNow Engineer / Professional</span></li></ul>
       </div>
-    </div>
+      <div class="certs__tier certs__tier--lilac">
+        <h3>Cloud</h3>
+        <ul><li><span class="certs__code">AZ-104</span><span>Microsoft Certified: Azure Administrator Associate</span></li><li><span class="certs__code">AWS CCP</span><span>AWS Certified Cloud Practitioner</span></li></ul>
+      </div>
+      <div class="certs__tier certs__tier--white">
+        <h3>Foundations</h3>
+        <ul><li><span class="certs__code">Security+</span><span>CompTIA Security+</span></li><li><span class="certs__code">Network+</span><span>CompTIA Network+</span></li><li><span class="certs__code">A+</span><span>CompTIA A+</span></li><li><span class="certs__code">Project+</span><span>CompTIA Project+</span></li><li><span class="certs__code">ITIL 4</span><span>ITIL 4 Foundation</span></li></ul>
+      </div>
   </div>
 </section>
 
-<!-- ============ CERTIFICATIONS ============ -->
-<section class="certs" id="certs">
-  <div class="section__inner">
-    <p class="eyebrow reveal">[ 04 // CERTIFICATIONS ]</p>
-    <h2 class="section__title reveal">Verified credentials.</h2>
-
-    <div class="cert-grid">
-      <div class="cert-card reveal"><span class="cert-card__code">SC-300</span><p>Identity and Access Administrator Associate</p></div>
-      <div class="cert-card reveal"><span class="cert-card__code">AZ-104</span><p>Azure Administrator Associate</p></div>
-      <div class="cert-card reveal"><span class="cert-card__code">AWS-CP</span><p>AWS Certified Cloud Practitioner</p></div>
-      <div class="cert-card reveal"><span class="cert-card__code">CCNA</span><p>Cisco Certified Network Associate</p></div>
-      <div class="cert-card reveal"><span class="cert-card__code">ITIL 4</span><p>Foundation Certificate in IT Service Management</p></div>
-      <div class="cert-card reveal"><span class="cert-card__code">SEC+</span><p>CompTIA Security+</p></div>
-      <div class="cert-card reveal"><span class="cert-card__code">NET+</span><p>CompTIA Network+</p></div>
-      <div class="cert-card reveal"><span class="cert-card__code">A+</span><p>CompTIA A+</p></div>
-      <div class="cert-card reveal"><span class="cert-card__code">PROJ+</span><p>CompTIA Project+</p></div>
-    </div>
+<!-- SKILLS -->
+<section class="skills section" id="skills">
+  <h2 class="section__title">Skills</h2>
+  <div class="skills__groups">
+      <div class="skills__group">
+        <h3>Identity and access</h3>
+        <p>Microsoft Entra ID, Okta, Active Directory, SSO, SAML 2.0, OAuth 2.0 / OIDC, Federation, Conditional Access, MFA / FIDO2, DUO, RBAC / ABAC, PAM / PIM, Access Reviews, Provisioning / Deprovisioning</p>
+      </div>
+      <div class="skills__group">
+        <h3>Cloud platforms</h3>
+        <p>Microsoft Azure, AWS, AWS IAM, Google Cloud Platform, GCP IAM, VMware</p>
+      </div>
+      <div class="skills__group">
+        <h3>Security and monitoring</h3>
+        <p>Microsoft Sentinel, Defender for Cloud, CrowdStrike, SentinelOne, Carbon Black EDR, Elastic EDR, Splunk</p>
+      </div>
+      <div class="skills__group">
+        <h3>Scripting and automation</h3>
+        <p>PowerShell, Microsoft Graph, Okta Workflows, Okta Management API, Power Automate, Python, Bash, HTML5, CSS, JavaScript</p>
+      </div>
+      <div class="skills__group">
+        <h3>Governance and compliance</h3>
+        <p>HIPAA, ITIL 4, Risk Assessment, Audit Documentation &amp; Reporting</p>
+      </div>
   </div>
 </section>
 
-<!-- ============ PROJECTS ============ -->
-<section class="projects" id="projects">
-  <div class="projects__bg" data-speed="0.25" aria-hidden="true"></div>
-  <div class="section__inner">
-    <p class="eyebrow reveal">[ 05 // PROJECTS ]</p>
-    <h2 class="section__title reveal">Case study.</h2>
-
-    <div class="project-card reveal">
-      <div class="project-card__head">
-        <div>
-          <span class="project-card__tag">PROJECT 01</span>
-          <h3>On-Prem Active Directory → Azure AD Migration</h3>
-          <p class="project-card__objective">
-            Migrated on-premises Active Directory infrastructure to Azure Active Directory (Azure AD)
-            for improved scalability, accessibility, and security.
-          </p>
-        </div>
-        <div class="project-card__stats">
-          <div><span>167</span>accounts migrated</div>
-          <div><span>100%</span>sync validated</div>
-        </div>
-      </div>
-
-      <div class="phase-list">
-
-        <div class="phase">
-          <button class="phase__head" data-phase>
-            <span class="phase__num">01</span>
-            <span class="phase__title">Planning &amp; Assessment</span>
-            <span class="phase__chevron">▾</span>
-          </button>
-          <div class="phase__body">
-            <ul>
-              <li>Conducted a thorough assessment of the existing on-premises Active Directory structure to identify users, groups, and permissions.</li>
-              <li>Determined requirements for the Azure AD implementation, considering user accounts, devices, applications, and security policies.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="phase">
-          <button class="phase__head" data-phase>
-            <span class="phase__num">02</span>
-            <span class="phase__title">Azure Setup</span>
-            <span class="phase__chevron">▾</span>
-          </button>
-          <div class="phase__body">
-            <ul>
-              <li>Created an Azure account and set up an Azure Virtual Network (VNet) for secure communication with Azure resources.</li>
-              <li>Established a VPN connection between on-premises infrastructure and Azure.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="phase">
-          <button class="phase__head" data-phase>
-            <span class="phase__num">03</span>
-            <span class="phase__title">Azure AD Creation</span>
-            <span class="phase__chevron">▾</span>
-          </button>
-          <div class="phase__body">
-            <ul>
-              <li>Accessed the Azure portal and created a new Azure AD instance.</li>
-              <li>Defined the initial directory structure, including users, groups, and role-based access controls.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="phase">
-          <button class="phase__head" data-phase>
-            <span class="phase__num">04</span>
-            <span class="phase__title">User &amp; Group Migration</span>
-            <span class="phase__chevron">▾</span>
-          </button>
-          <div class="phase__body">
-            <ul>
-              <li>Exported 167 user accounts, group memberships, and permissions from the on-premises Active Directory.</li>
-              <li>Imported the data into Azure AD using Azure AD Connect.</li>
-              <li>Validated that user and group information synchronized correctly.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="phase">
-          <button class="phase__head" data-phase>
-            <span class="phase__num">05</span>
-            <span class="phase__title">Application Integration</span>
-            <span class="phase__chevron">▾</span>
-          </button>
-          <div class="phase__body">
-            <ul>
-              <li>Configured Azure AD Application Proxy to enable secure remote access to on-premises applications.</li>
-              <li>Integrated Azure AD with cloud-based applications and services for single sign-on (SSO).</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="phase">
-          <button class="phase__head" data-phase>
-            <span class="phase__num">06</span>
-            <span class="phase__title">Security Enhancements</span>
-            <span class="phase__chevron">▾</span>
-          </button>
-          <div class="phase__body">
-            <ul>
-              <li>Implemented Azure Multi-Factor Authentication (MFA) for an added layer of security.</li>
-              <li>Set up conditional access policies to control access based on user and device conditions.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="project-card__tags">
-        <span class="chip">Azure AD</span>
-        <span class="chip">Azure AD Connect</span>
-        <span class="chip">VPN / VNet</span>
-        <span class="chip">Application Proxy</span>
-        <span class="chip">SSO</span>
-        <span class="chip">MFA</span>
-        <span class="chip">Conditional Access</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONTACT ============ -->
+<!-- CONTACT -->
 <section class="contact" id="contact">
-  <div class="contact__bg" data-speed="0.15" aria-hidden="true"></div>
-  <div class="section__inner">
-    <p class="eyebrow reveal">[ 06 // CONTACT ]</p>
-    <h2 class="section__title reveal">Establish a connection.</h2>
-    <p class="contact__sub reveal">Open to identity, security, and infrastructure roles. Reach out below.</p>
-
-    <div class="contact-grid reveal">
-      <a class="contact-card" href="mailto:randya.malvoisin@gmail.com" id="emailCard">
-        <span class="contact-card__icon" aria-hidden="true">✉</span>
-        <span class="contact-card__label">Email</span>
-        <span class="contact-card__value">randya.malvoisin@gmail.com</span>
-        <span class="contact-card__action" id="copyEmailBtn" data-copy="randya.malvoisin@gmail.com">Copy address</span>
-      </a>
-
-      <a class="contact-card" href="https://linkedin.com/in/rmalvoisin" target="_blank" rel="noopener noreferrer">
-        <span class="contact-card__icon" aria-hidden="true">in</span>
-        <span class="contact-card__label">LinkedIn</span>
-        <span class="contact-card__value">linkedin.com/in/rmalvoisin</span>
-        <span class="contact-card__action">Open profile ↗</span>
-      </a>
-    </div>
-
-    <p class="copy-toast" id="copyToast" role="status" aria-live="polite">Address copied</p>
+  <p class="contact__lead">Open to identity, security, and infrastructure roles.</p>
+  <a class="contact__email" href="mailto:randya.malvoisin@gmail.com">randya.malvoisin@gmail.com</a>
+  <div class="contact__actions">
+    <button class="btn btn--primary" type="button" id="copyEmail" data-copy="randya.malvoisin@gmail.com">Copy email</button>
+    <a class="btn btn--quiet" href="https://linkedin.com/in/rmalvoisin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="btn btn--quiet" href="Randy_Malvoisin_Resume.pdf" download>Resume (PDF)</a>
   </div>
+  <p class="toast" id="toast" role="status" aria-live="polite"></p>
 </section>
+
+</main>
 
 <footer class="footer">
-  <div class="section__inner footer__inner">
-    <span class="nav__brand nav__brand--footer"><span class="nav__bracket">[</span>RM<span class="nav__bracket">]</span></span>
-    <p>© <span id="year"></span> Randy Malvoisin</p>
-  </div>
+  <p>© <span id="year"></span> Randy Malvoisin</p>
+  <p>Reading, PA</p>
 </footer>
+
+<dialog class="detail" id="detail" aria-labelledby="detailTitle">
+  <div class="detail__head">
+    <div>
+      <p class="detail__kicker" id="detailKicker"></p>
+      <h2 id="detailTitle"></h2>
+    </div>
+    <button class="detail__close" type="button" id="detailClose" aria-label="Close details">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="detail__body" id="detailBody"></div>
+</dialog>
 
 <script src="script.js"></script>
 </body>
